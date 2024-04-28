@@ -1,0 +1,38 @@
+header {
+    text-align: center;
+    grid-area: header;
+    background-color: rgb(117, 173, 150);
+}
+
+aside {
+    text-align: center;
+    grid-area: aside;
+    background-color: rgb(200, 211, 125);
+    padding: auto;
+}
+
+main {
+    text-align: left;
+    grid-area: main;
+    padding: auto;
+}
+
+footer {
+    text-align: center;
+    grid-area: footer;
+    background-color: rgb(112, 112, 193);
+}
+
+.grid-container {
+    display: grid;
+    position: relative;
+    margin: auto;
+    grid-template-rows: 100px 9fr 50px;
+    grid-template-columns: 0.3fr 1fr 1fr;
+    grid-template-areas:
+        'header header header'
+        'aside main main'
+        'footer footer footer';
+    gap: 0px;
+    padding: 0px;
+}
